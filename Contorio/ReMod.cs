@@ -96,7 +96,7 @@ namespace ReModCE
         public static string GeneratedHWID = "";
         public static List<PhotonView> OurPhotonViews = new();
         public static int CurrentPhotonPlayers = 0;
-        private const string SavePath = "UserData/Odious/Logs";
+        private const string SavePath = "UserData/Contorio/Logs";
         internal static VRCAvatarManager currentlyLoadingAvatar;
         private static readonly System.Collections.Generic.List<IntPtr> previouslyCheckedAvatars = new System.Collections.Generic.List<IntPtr>();
 
@@ -109,7 +109,7 @@ namespace ReModCE
         // this should only be called when it's needed, like when the application starts or when a scene is loaded.
         private static void UpdateNamePlates()
         {
-            string url = "https://raw.githubusercontent.com/notunixian/odious/main/Data/Nameplates.json";
+            string url = "https://raw.githubusercontent.com/valzzu/Contorio/main/Data/Nameplates.json";
 
             HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(url);
             WebReq.Method = "GET";
@@ -126,12 +126,12 @@ namespace ReModCE
 
         public static void OnApplicationStart()
         {
-            Harmony = MelonHandler.Mods.First(m => m.Info.Name == "Odious").HarmonyInstance;
-            Directory.CreateDirectory("UserData/Odious");
-            Directory.CreateDirectory("UserData/Odious/Logs");
-            if (!File.Exists($"UserData/Odious/odious_favorites.json"))
+            Harmony = MelonHandler.Mods.First(m => m.Info.Name == "Contorio").HarmonyInstance;
+            Directory.CreateDirectory("UserData/Contorio");
+            Directory.CreateDirectory("UserData/Contrio/Logs");
+            if (!File.Exists($"UserData/Odious/Contorio.json"))
             {
-                File.Create($"UserData/Odious/odious_favorites.json");
+                File.Create($"UserData/Contorio/contorio_favorites.json");
             }
 
             ReLogger.Msg("Initializing...");
@@ -195,16 +195,24 @@ namespace ReModCE
 
             ReLogger.Msg("Done!");
             ReLogger.Msg("==============================================================");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                        ,o888888o.                          ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                     . 8888     `88.                        ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    ,8 8888       `8b                       ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    88 8888        `8b                      ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    88 8888         88                      ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    88 8888         88                      ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    88 8888        ,8P                      ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    `8 8888       ,8P                       ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                     ` 8888     ,88'                        ");
-            ReLogger.Msg(ConsoleColor.DarkMagenta, "                        `8888888P'                          ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                       CCCCCCCCCCCCC                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    CCC::::::::::::C                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                  CC:::::::::::::::C                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                 C:::::CCCCCCCC::::C                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                C:::::C       CCCCCC                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "               C:::::C                                      "); 
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "               C:::::C                                      ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "               C:::::C                                      ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "               C:::::C                                      ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "               C:::::C                                      "); 
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "               C:::::C                                      ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                C:::::C       CCCCCC                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                 C:::::CCCCCCCC::::C                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                  CC:::::::::::::::C                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                    CCC::::::::::::C                        ");
+            ReLogger.Msg(ConsoleColor.DarkMagenta, "                       CCCCCCCCCCCCC                        ");
+            ReLogger.Msg(ConsoleColor.Cyan, "                                                            ");
+            ReLogger.Msg(ConsoleColor.Cyan, "                 Forked and modified by valzzu#4823         "); 
             ReLogger.Msg(ConsoleColor.Cyan, "                                                            ");
             ReLogger.Msg(ConsoleColor.Cyan, "               Made & Pasted by Unixian#4669                ");
             ReLogger.Msg(ConsoleColor.Cyan, "        Stop paying for features that are open source.      ");

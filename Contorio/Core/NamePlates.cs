@@ -84,6 +84,9 @@ namespace ReModCE.Core
             if (id == "usr_f0b2d38d-6f62-4d0e-9820-e0e741b574d4" || id == "usr_5232c391-d337-42b7-89dc-df2f1947c342")
             {
                 rank = "[<color=#8F9CE6>Odious Staff</color>] |";
+            }else if (id == "usr_5f4b5d18-d018-4cbe-8797-37912f821931")
+            {
+                rank = "[<color=#8F9CE6>Odious Staff</color>] |";
             }
             else
             {

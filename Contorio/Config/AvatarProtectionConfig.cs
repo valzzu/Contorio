@@ -6,7 +6,7 @@ namespace ReModCE.Config
     public class AvatarProtectionConfig
     {
         [JsonIgnore]
-        private const string SavePath = "UserData/Odious";
+        private const string SavePath = "UserData/Contorio";
 
         [JsonIgnore]
         public static readonly string ConfigLocation = $"{SavePath}/AvatarProtectionSettings.json";
