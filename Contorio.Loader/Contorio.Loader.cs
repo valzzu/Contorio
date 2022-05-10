@@ -18,19 +18,19 @@ namespace ReModCE.Loader
 
     public static class BuildInfo
     {
-        public const string Name = "Odious";
-        public const string Author = "Unixian";
+        public const string Name = "Contorio (Odious)";
+        public const string Author = "valzzu (Unixian)";
         public const string Company = null;
         public const string Version = "1.0.0";
-        public const string DownloadLink = "https://discord.gg/g84N8yXF7K";
+        //public const string DownloadLink = "https://discord.gg/g84N8yXF7K";
     }
 
     internal static class GitHubInfo
     {
-        public const string Author = "notunixian";
-        public const string Repository = "odious";
+        public const string Author = "valzzu";
+        public const string Repository = "Contorio";
         public const string Version = "latest";
-        public const string Link = "https://github.com/notunixian/odious/releases/latest";
+        public const string Link = "https://github.com/valzzu/Contorio/releases/latest";
     }
 
     public class ReLoader : MelonMod
@@ -60,7 +60,7 @@ namespace ReModCE.Loader
                 true);
 
             DownloadFromGitHub("ReMod.Core", out _);
-            DownloadFromGitHub("Odious", out var assembly);
+            DownloadFromGitHub("Contorio", out var assembly);
 
             if (assembly == null)
                 return;
@@ -206,9 +206,9 @@ namespace ReModCE.Loader
                 bytes = File.ReadAllBytes($"{fileName}.dll");
             }
 
-            if (!File.Exists($"{fileName}.dll") && File.Exists($"{fileName}.odious"))
+            if (!File.Exists($"{fileName}.dll") && File.Exists($"{fileName}.Contorio"))
             {
-                bytes = File.ReadAllBytes($"{fileName}.odious");
+                bytes = File.ReadAllBytes($"{fileName}.Contorio");
             }
                 
             using var wc = new WebClient
@@ -227,7 +227,7 @@ namespace ReModCE.Loader
             }
             catch (WebException e)
             {
-                MelonLogger.Error($"Unable to download latest version of Odious: {e}");
+                MelonLogger.Error($"Unable to download latest version of Contorio: {e}");
             }
 
             if (bytes == null)
@@ -283,7 +283,7 @@ namespace ReModCE.Loader
 
             try
             {
-                MelonLogger.Msg($"Attempting to load Assemblies... Thank you for using Odious!");
+                MelonLogger.Msg($"Attempting to load Assemblies... Thank you for using Contorio!");
                 loadedAssembly = Assembly.Load(bytes);
             }
             catch (BadImageFormatException e)

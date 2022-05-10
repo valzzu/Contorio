@@ -7,8 +7,8 @@
     <ProjectGuid>{6E5E0E59-73D9-4D74-B734-D040D26710C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ReModCE.Loader</RootNamespace>
-    <AssemblyName>ReModCE.Loader</AssemblyName>
+    <RootNamespace>Contorio.Loader</RootNamespace>
+    <AssemblyName>Contorio.Loader</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

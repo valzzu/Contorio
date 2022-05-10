@@ -9,4 +9,4 @@ credits for everything related to the client can be found [here](https://github.
 **this wouldn't be possible without** [Requi](https://github.com/RequiDev) and his projects [ReModCE](https://github.com/RequiDev/ReModCE), and the underlying framework [ReMod.Core](https://github.com/RequiDev/ReMod.Core) and you should thank him for creating such awesome things.
 
 
-## you can download the latest build by going [to the releases page](https://github.com/notunixian/odious/releases/latest)
+## you can download the latest build by going [to the releases page](https://github.com/valzzu/Contorio/releases/latest)
