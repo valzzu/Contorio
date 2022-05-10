@@ -1,4 +1,4 @@
-# Contorio - tl;dr remod ce w/ pasted code from multiple clients
+# Contorio(Odious) - tl;dr remod ce w/ pasted code from multiple clients
 
 ## Credits
 
